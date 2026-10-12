@@ -26,7 +26,7 @@ export function Navbar() {
     <header className={`site-header ${scrolled ? 'site-header-scrolled' : ''}`}>
       <div className="top-line">
         <span>PRECISION VEHICLE FINISHING</span>
-        <span>EST. 2024 / OKLAHOMA</span>
+        <span>EST. 2024 / USA</span>
       </div>
       <nav className="nav-shell">
         <a href="#top" className="brand-lockup" aria-label="Ascend Automotive home">
