@@ -1,7 +1,7 @@
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
-import { About } from '@/components/About';
 import { WhatWeDo } from '@/components/WhatWeDo';
+import { About } from '@/components/About';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { ComeSee } from '@/components/ComeSee';
 import { Footer } from '@/components/Footer';
@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <About />
         <WhatWeDo />
+        <About />
         <WhyChooseUs />
         <ComeSee />
       </main>
