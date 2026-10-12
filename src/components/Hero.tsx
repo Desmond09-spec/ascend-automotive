@@ -1,63 +1,66 @@
 export function Hero() {
   return (
-    <section id="top" className="relative min-h-screen bg-cream-50">
-      <div className="mx-auto max-w-7xl px-6 pt-32 pb-16 md:pt-40">
-        <div className="grid items-end gap-10 md:grid-cols-12 md:gap-12">
-          <div className="md:col-span-6">
-            <h1 className="font-serif text-[2.75rem] font-light leading-[1.05] text-ink-950 sm:text-6xl lg:text-[5rem]">
-              Tint, film, and
-              <br />
-              restoration,
-              <br />
-              <em className="font-normal not-italic text-ember-600">done by hand.</em>
-            </h1>
-          </div>
-          <div className="md:col-span-5 md:col-start-8">
-            <p className="text-lg leading-relaxed text-ink-600">
-              A family shop in the business of keeping cars looking like they
-              just left the lot. No corporate playbook, no upselling, no rush.
-              Just skilled hands and honest work.
-            </p>
-            <div className="mt-8 flex gap-6">
-              <a
-                href="#come-see"
-                className="text-sm font-medium text-ink-900 border-b border-ink-900 pb-0.5 transition-colors hover:border-ember-500 hover:text-ember-600"
-              >
-                Book a service
-              </a>
-              <a
-                href="#what-we-do"
-                className="text-sm font-medium text-ink-500 border-b border-ink-400 pb-0.5 transition-colors hover:border-ink-900 hover:text-ink-900"
-              >
-                See what we do
-              </a>
-            </div>
-          </div>
+    <section id="top" className="relative min-h-screen bg-carbon-950 overflow-hidden">
+      {/* Full-bleed background image */}
+      <div className="absolute inset-0">
+        <img
+          src="https://images.pexels.com/photos/4488642/pexels-photo-4488642.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          alt="Moody garage interior with a classic car"
+          className="h-full w-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-carbon-950 via-carbon-950/60 to-carbon-950/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-carbon-950/80 to-transparent" />
+      </div>
+
+      {/* Content */}
+      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 pt-24 pb-32">
+        <p className="mb-6 text-xs uppercase tracking-widest text-signal-500">
+          Est. 2024 — formerly Tint Buddies
+        </p>
+        <h1 className="font-display text-[4.5rem] leading-[0.88] text-chrome-100 sm:text-8xl lg:text-[10rem]">
+          TINT. FILM.
+          <br />
+          RESTORATION.
+          <br />
+          <span className="text-signal-500">NO SHORTCUTS.</span>
+        </h1>
+
+        <p className="mt-10 max-w-xl text-base leading-relaxed text-chrome-300">
+          A family shop that treats every car like it's our own. No corporate
+          playbook. No upselling. No rush. Just skilled hands and honest work.
+        </p>
+
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a
+            href="#come-see"
+            className="border border-signal-600 bg-signal-600 px-8 py-3 text-xs uppercase tracking-widest font-medium text-chrome-100 transition-colors hover:bg-transparent"
+          >
+            Book a Service
+          </a>
+          <a
+            href="#what-we-do"
+            className="border border-carbon-600 px-8 py-3 text-xs uppercase tracking-widest font-medium text-chrome-300 transition-colors hover:border-chrome-300 hover:text-chrome-100"
+          >
+            See What We Do
+          </a>
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 pb-12">
-        <img
-          src="https://images.pexels.com/photos/20051463/pexels-photo-20051463.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          alt="Two technicians applying protective film to a car in a garage"
-          className="aspect-[16/9] w-full object-cover md:aspect-[21/9]"
-        />
-      </div>
-
-      <div className="mx-auto max-w-7xl px-6 pb-16">
-        <div className="grid gap-8 border-t border-cream-200 pt-8 md:grid-cols-3">
-          <p className="text-sm text-ink-500">
-            <span className="font-serif text-2xl font-light text-ink-900 block">Est. 2024</span>
-            Founded as Tint Buddies. Reborn as Ascend Automotive in 2026.
-          </p>
-          <p className="text-sm text-ink-500">
-            <span className="font-serif text-2xl font-light text-ink-900 block">Family-run</span>
-            Not a franchise. Not a chain. A family that happens to be very good with cars.
-          </p>
-          <p className="text-sm text-ink-500">
-            <span className="font-serif text-2xl font-light text-ink-900 block">Three trades</span>
-            Window tint. Paint protection film. Headlight restoration.
-          </p>
+      {/* Bottom strip */}
+      <div className="relative border-t border-carbon-700">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid grid-cols-1 gap-px md:grid-cols-3">
+            {[
+              { stat: 'EST. 2024', text: 'Founded as Tint Buddies. Reborn as Ascend Automotive.' },
+              { stat: 'FAMILY-RUN', text: 'Not a franchise. Not a chain. A family that happens to be good with cars.' },
+              { stat: '3 TRADES', text: 'Window tint. Paint protection film. Headlight restoration.' },
+            ].map((item) => (
+              <div key={item.stat} className="border-r border-carbon-700 px-6 py-8 last:border-r-0">
+                <p className="font-display text-2xl tracking-wider text-chrome-100">{item.stat}</p>
+                <p className="mt-2 text-sm leading-relaxed text-chrome-500">{item.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

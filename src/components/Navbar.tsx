@@ -3,8 +3,8 @@ import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { label: 'About', href: '#about' },
-  { label: 'What We Do', href: '#what-we-do' },
-  { label: 'Why Choose Us', href: '#why-choose-us' },
+  { label: 'Services', href: '#what-we-do' },
+  { label: 'Why Us', href: '#why-choose-us' },
   { label: 'Visit', href: '#come-see' },
 ];
 
@@ -20,13 +20,23 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        scrolled ? 'bg-cream-50/95 backdrop-blur-sm border-b border-cream-200' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-carbon-950/95 backdrop-blur-sm border-b border-carbon-700'
+          : 'bg-transparent border-b border-transparent'
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <a href="#top" className="font-serif text-lg font-medium text-ink-900">
-          Ascend Automotive
+        <a href="#top" className="flex items-center gap-2">
+          <span className="font-display text-xl tracking-wider text-chrome-100">
+            ASCEND
+          </span>
+          <span className="font-display text-xl tracking-wider text-signal-500">
+            /
+          </span>
+          <span className="font-display text-xl tracking-wider text-chrome-300">
+            AUTOMOTIVE
+          </span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -34,14 +44,14 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-ink-600 transition-colors hover:text-ink-900"
+              className="text-xs uppercase tracking-widest text-chrome-400 transition-colors hover:text-chrome-100"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#come-see"
-            className="border-b border-ink-900 pb-0.5 text-sm font-medium text-ink-900 transition-colors hover:border-ember-500 hover:text-ember-600"
+            className="border border-signal-600 px-5 py-2 text-xs uppercase tracking-widest font-medium text-chrome-100 transition-colors hover:bg-signal-600"
           >
             Get a Quote
           </a>
@@ -49,7 +59,7 @@ export function Navbar() {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="text-ink-900 md:hidden"
+          className="text-chrome-100 md:hidden"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -57,14 +67,14 @@ export function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="border-t border-cream-200 bg-cream-50 md:hidden">
+        <div className="border-t border-carbon-700 bg-carbon-950 md:hidden">
           <div className="flex flex-col gap-4 px-6 py-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-sm text-ink-600"
+                className="text-xs uppercase tracking-widest text-chrome-400"
               >
                 {link.label}
               </a>
@@ -72,7 +82,7 @@ export function Navbar() {
             <a
               href="#come-see"
               onClick={() => setMobileOpen(false)}
-              className="border-b border-ink-900 pb-0.5 text-sm font-medium text-ink-900 w-fit"
+              className="border border-signal-600 px-5 py-2 text-xs uppercase tracking-widest font-medium text-chrome-100 w-fit"
             >
               Get a Quote
             </a>
