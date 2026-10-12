@@ -15,9 +15,7 @@ export function Hero() {
         </div>
       </div>
       <div className="hero-emblem" aria-hidden="true">
-        <span className="emblem-a">A</span>
-        <span className="emblem-rule" />
-        <span className="emblem-label">ASCEND / AUTOMOTIVE</span>
+        <img className="hero-logo" src="/Chrome_Ascend_Automotive_Emblem_1.png" alt="" />
       </div>
       <div className="hero-bottom"><span>VIEW SERVICES</span><ArrowDownRight size={16} /></div>
     </section>

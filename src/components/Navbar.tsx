@@ -9,11 +9,7 @@ const navLinks = [
 ];
 
 function BrandMark() {
-  return (
-    <span className="brand-mark" aria-hidden="true">
-      A
-    </span>
-  );
+  return <img className="brand-logo" src="/Chrome_Ascend_Automotive_Emblem_1.png" alt="Ascend Automotive" />;
 }
 
 export function Navbar() {
@@ -35,10 +31,6 @@ export function Navbar() {
       <nav className="nav-shell">
         <a href="#top" className="brand-lockup" aria-label="Ascend Automotive home">
           <BrandMark />
-          <span>
-            <strong>ASCEND</strong>
-            <small>AUTOMOTIVE</small>
-          </span>
         </a>
 
         <div className="desktop-nav">
