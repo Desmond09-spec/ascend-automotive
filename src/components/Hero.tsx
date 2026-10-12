@@ -15,30 +15,34 @@ export function Hero() {
         <p className="mb-8 text-xs uppercase tracking-widest text-signal-500">
           Est. 2024 — formerly Tint Buddies
         </p>
-        <h1 className="font-display text-7xl leading-[0.85] text-chrome-100 sm:text-8xl lg:text-[10rem]">
-          TINT. FILM.
-          <br />
-          RESTORATION.
+
+        {/* Full-width headline */}
+        <h1 className="font-display text-[5rem] leading-[0.85] text-chrome-100 sm:text-8xl lg:text-[11rem] xl:text-[13rem]">
+          TINT. FILM. RESTORATION.
           <br />
           <span className="text-signal-500">NO SHORTCUTS.</span>
         </h1>
-        <p className="mt-10 max-w-md text-base leading-relaxed text-chrome-400">
-          A family shop that treats every car like it's our own. No corporate
-          playbook. No upselling. No rush. Just skilled hands and honest work.
-        </p>
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="#come-see"
-            className="border border-signal-600 bg-signal-600 px-8 py-3 text-xs uppercase tracking-widest font-medium text-chrome-100 transition-colors hover:bg-transparent"
-          >
-            Book a Service
-          </a>
-          <a
-            href="#what-we-do"
-            className="border border-carbon-600 px-8 py-3 text-xs uppercase tracking-widest font-medium text-chrome-300 transition-colors hover:border-chrome-300 hover:text-chrome-100"
-          >
-            See What We Do
-          </a>
+
+        {/* Two-column row: description + CTAs */}
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:mt-16 lg:grid-cols-12">
+          <p className="text-base leading-relaxed text-chrome-400 lg:col-span-5">
+            A family shop that treats every car like it's our own. No corporate
+            playbook. No upselling. No rush. Just skilled hands and honest work.
+          </p>
+          <div className="flex flex-wrap items-start gap-4 sm:col-start-2 lg:col-span-4 lg:col-start-9">
+            <a
+              href="#come-see"
+              className="border border-signal-600 bg-signal-600 px-8 py-3 text-xs uppercase tracking-widest font-medium text-chrome-100 transition-colors hover:bg-transparent"
+            >
+              Book a Service
+            </a>
+            <a
+              href="#what-we-do"
+              className="border border-carbon-600 px-8 py-3 text-xs uppercase tracking-widest font-medium text-chrome-300 transition-colors hover:border-chrome-300 hover:text-chrome-100"
+            >
+              See What We Do
+            </a>
+          </div>
         </div>
       </div>
 
