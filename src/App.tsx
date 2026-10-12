@@ -7,19 +7,7 @@ import { ComeSee } from '@/components/ComeSee';
 import { Footer } from '@/components/Footer';
 
 function App() {
-  return (
-    <div className="min-h-screen bg-carbon-950">
-      <Navbar />
-      <main>
-        <Hero />
-        <WhatWeDo />
-        <About />
-        <WhyChooseUs />
-        <ComeSee />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <div className="site-shell"><Navbar /><main><Hero /><WhatWeDo /><About /><WhyChooseUs /><ComeSee /></main><Footer /></div>;
 }
 
 export default App;
