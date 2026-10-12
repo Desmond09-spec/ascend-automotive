@@ -39,6 +39,7 @@ h1, h2, h3, p { margin: 0; }
 h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; font-weight: 400; text-transform: uppercase; }
 h1 { max-width: 620px; margin: 25px 0; font-size: clamp(86px, 12vw, 174px); line-height: .78; letter-spacing: .01em; }
 h1 em, h2 span { color: #e9e9e7; font-style: normal; }
+.standard-section h2 span { color: #34393e; }
 .hero-intro { max-width: 420px; color: #a9acae; font-size: 14px; line-height: 1.8; }
 .hero-actions { display: flex; align-items: center; gap: 28px; margin-top: 34px; }
 .button { display: inline-flex; align-items: center; gap: 22px; padding: 15px 18px; font-size: 10px; letter-spacing: .15em; text-transform: uppercase; transition: transform .2s, background .2s; }
@@ -51,9 +52,7 @@ h1 em, h2 span { color: #e9e9e7; font-style: normal; }
 .emblem-a { color: transparent; -webkit-text-stroke: 2px #e9e9e7; font-family: 'Bebas Neue', sans-serif; font-size: 270px; font-style: italic; line-height: .7; filter: drop-shadow(9px 9px 0 #62676c); }
 .emblem-rule { width: 210px; height: 3px; margin: 12px 0; background: linear-gradient(90deg, transparent, #e9e9e7, transparent); }
 .emblem-label { color: #e9e9e7; font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: .4em; }
-.hero-meta, .hero-bottom { position: absolute; bottom: 30px; display: flex; gap: 25px; color: #6e7276; font-size: 9px; letter-spacing: .19em; }
-.hero-meta { right: max(24px, calc((100vw - 1280px) / 2)); }
-.hero-bottom { left: max(24px, calc((100vw - 1280px) / 2)); }
+.hero-bottom { position: absolute; bottom: 30px; left: max(24px, calc((100vw - 1280px) / 2)); display: flex; gap: 25px; color: #6e7276; font-size: 9px; letter-spacing: .19em; }
 
 .section { padding: 132px max(24px, calc((100vw - 1280px) / 2)); }
 .section-dark { background: #101214; }
@@ -125,7 +124,6 @@ h1 em, h2 span { color: #e9e9e7; font-style: normal; }
   .hero-copy { width: 90%; margin-left: 20px; padding-top: 70px; }
   .hero-orbit { right: -180px; top: 30%; width: 450px; height: 450px; }
   .hero-emblem { right: -5%; top: 35%; opacity: .25; }
-  .hero-meta { display: none; }
   .hero-bottom { left: 20px; bottom: 24px; }
   .section, .contact-section { padding: 90px 20px; }
   .section-heading, .standard-intro { display: block; margin-bottom: 48px; }

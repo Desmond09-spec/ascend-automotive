@@ -19,8 +19,7 @@ export function Hero() {
         <span className="emblem-rule" />
         <span className="emblem-label">ASCEND / AUTOMOTIVE</span>
       </div>
-      <div className="hero-meta"><span>01 — 04</span><span>MOVE WITH INTENT</span></div>
-      <div className="hero-bottom"><span>SCROLL TO DISCOVER</span><ArrowDownRight size={16} /></div>
+      <div className="hero-bottom"><span>VIEW SERVICES</span><ArrowDownRight size={16} /></div>
     </section>
   );
 }
