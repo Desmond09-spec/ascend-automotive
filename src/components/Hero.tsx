@@ -10,7 +10,7 @@ export function Hero() {
         <h1>Make your<br /><em>mark.</em></h1>
         <p className="hero-intro">Window tint, paint protection film, and restoration work with a sharper point of view. Built for drivers who care how every line lands.</p>
         <div className="hero-actions">
-          <a className="button button-red" href="#come-see">Book your vehicle <ArrowRight size={17} /></a>
+          <a className="button button-chrome" href="#come-see">Book your vehicle <ArrowRight size={17} /></a>
           <a className="text-link" href="#what-we-do">Explore the work <ArrowDownRight size={17} /></a>
         </div>
       </div>
